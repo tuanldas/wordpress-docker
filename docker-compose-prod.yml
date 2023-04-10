@@ -1,0 +1,9 @@
+services:
+  wordpress:
+    networks:
+      - publish
+
+networks:
+  publish:
+    external: true
+    name: ${CLOUD_NETWORK}
